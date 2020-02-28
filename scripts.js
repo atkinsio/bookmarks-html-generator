@@ -58,12 +58,3 @@ document.getElementById("bookmark-names").placeholder = `GitHub
 Stack Overflow
 Reddit
 `;
-
-document.getElementById("bookmark-urls").addEventListener("keyup", function() {
-    var urlInput = document.getElementById('bookmark-urls').value;
-    if (urlInput != "") {
-        document.getElementById('download-button').removeAttribute("disabled");
-    } else {
-        document.getElementById('download-button').setAttribute("disabled", null);
-    }
-});
