@@ -1,0 +1,37 @@
+<head>   
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   <div class="container">
+      <div class="col-md-8 mx-auto text-center">
+         <div class="header-title">
+            <h1 class="wv-heading--title">
+               Bookmarks HTML Generator
+            </h1>
+            <h2 class="wv-heading--subtitle">
+               A tool which allows you to convert a list of URLs into Bookmarks for use with all major browsers. 
+            </h2>            
+         </div>
+      </div>
+      <div class="row">
+         <div class="col-md-8 mx-auto">        
+                  <div class="form-group">
+                     <input type="text" name="folder-name"  class="form-control my-input" id="folder-name" placeholder="Folder Name (Optional)">
+                  </div>
+                  <div class="input-group">
+                     <textarea class="form-control my-input" id="bookmark-urls" placeholder=""></textarea>
+                     <textarea class="form-control my-input" id="bookmark-names" placeholder=""></textarea>
+                   </div>
+                  <div class="text-center ">
+                     <button class=" btn btn-block send-button tx-tfm" onclick="download()">Download Bookmarks</button>
+                  </div>                 
+                  <p class="small mt-3">Instructions and more information can be found on the projects <a href="https://github.com/atkinsio/bookmarks-html-generator" class="ps-hero__content__link">GitHub Page</a>. Bookmark names are optional and if excluded will default to the url.</p>        
+         </div>
+      </div>
+   </div>
+   <script src="scripts.js"></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
