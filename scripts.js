@@ -26,7 +26,7 @@ function download() {
         }
         
         // Default bookmark name to url string if name not specified
-        if (bookmarkNames[i] == "") {
+        if (bookmarkNames[i] == "" || typeof bookmarkNames[i] == 'undefined') {
             bookmarkNames[i] = bookmarkUrls[i];
         }
         
