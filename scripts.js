@@ -49,12 +49,14 @@ function download() {
     document.body.removeChild(element);  
 }
 
-document.getElementById("bookmark-urls").placeholder = `https://github.com/
+document.getElementById("bookmark-urls").placeholder = `Example:
+https://github.com/
 https://stackoverflow.com/
 https://www.reddit.com/
 `;
 
-document.getElementById("bookmark-names").placeholder = `GitHub
+document.getElementById("bookmark-names").placeholder = `Example:
+GitHub
 Stack Overflow
 Reddit
 `;
