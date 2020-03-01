@@ -16,3 +16,7 @@ Live site: [https://atkinsio.com/bookmarks-html-generator/](https://atkinsio.com
  - [Firefox](https://support.mozilla.org/en-US/kb/import-bookmarks-html-file)
  - [Safari](https://support.apple.com/en-au/guide/safari/ibrw1015/mac)
  - [Internet Explorer](https://support.microsoft.com/en-us/help/211089/how-to-import-and-export-the-internet-explorer-favorites-folder-to-a-3)
+
+ ## Netscape Bookmark File Format
+
+ [Documentation](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753582(v=vs.85)?redirectedfrom=MSDN)
