@@ -8,8 +8,7 @@ function download() {
     <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
     <TITLE>Bookmarks</TITLE>
     <H1>Bookmarks</H1>
-    <DL><p>
-        <DL><p>`
+    <DL><p>`
     
     // Only add Folder to output if folder name specified
     if (folderName != "") {
@@ -36,6 +35,16 @@ function download() {
         output = output.concat(bookmark)
     }
 
+    // Only close folder tag if folder name specified
+    if (folderName != "") {
+        output = output.concat( `
+        </DL><p>`)
+    }
+
+    // Close final tag
+    output = output.concat( `
+        </DL><p>`);
+
     // Build downloadable .html file with content from output variable
     var element = document.createElement('a');
     element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(output));
@@ -46,17 +55,17 @@ function download() {
   
     element.click();
   
-    document.body.removeChild(element);  
+    document.body.removeChild(element);
+    
+    gtag('event', 'Download Clicked');
 }
 
-document.getElementById("bookmark-urls").placeholder = `Example:
-https://github.com/
+document.getElementById("bookmark-urls").placeholder = `https://github.com/
 https://stackoverflow.com/
 https://www.reddit.com/
 `;
 
-document.getElementById("bookmark-names").placeholder = `Example:
-GitHub
+document.getElementById("bookmark-names").placeholder = `GitHub
 Stack Overflow
 Reddit
 `;
